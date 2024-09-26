@@ -1,0 +1,120 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1f1f1f;
+    margin: 0;
+    color: #fff;
+}
+
+/* Container Styles */
+.container {
+    text-align: center;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Heading Animation */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease;
+}
+
+/* Video Styles */
+video {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 3px solid #4CAF50;
+    animation: zoomIn 1s ease-in-out;
+}
+
+/* Button Styles */
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s ease-in-out;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Canvas Styles */
+canvas {
+    display: none;
+    margin-bottom: 10px;
+}
+
+/* Download Link Styles */
+a#downloadLink {
+    display: block;
+    text-decoration: none;
+    padding: 12px 25px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.3s ease-in-out;
+}
+
+/* Download Link Hover Effect */
+a#downloadLink:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    video {
+        max-width: 100%;
+    }
+    button,
+    a#downloadLink {
+        font-size: 16px;
+    }
+}
+
+/* Container Hover Animation */
+.container:hover {
+    transform: translateY(-10px);
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
